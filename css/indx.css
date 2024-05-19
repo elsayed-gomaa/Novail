@@ -1,0 +1,198 @@
+*{
+ margin: 0;
+padding: 0;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+body{
+    background: linear-gradient( #200016,#10001f  );
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+/*satrt header*/
+header  {
+    display: flex;
+     justify-content: space-between;
+     align-items: center;
+    
+     margin-top: 20px ;
+     padding-bottom: 10px;
+    position: fixed;
+    width: 90%;
+    z-index: 5;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/*start small media*/
+@media(max-width:767px){
+    header ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    header ul li {
+   margin-top: 12px;
+   padding: 0;
+   display: none;
+  
+    }
+    header ul i{
+        color: white;
+        font-weight: bolder;
+        font-size: x-large;
+        transition: .5s;
+        margin-bottom: 5px;
+        margin-right: 25px;
+    }
+  
+    header {
+display: flex;
+justify-content: center;
+align-items:flex-start;
+justify-content: space-between;
+    }
+}
+/*end small media*/
+@media(min-width:767px){
+    header ul i{
+     opacity: 0;
+
+    }
+}
+header ul{
+    display: flex;
+     justify-content:center;
+     align-items: center;
+}
+
+header .logo{
+    margin-right: 20px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+ text-transform: u;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+header ul li {
+    margin-right: 30px;
+    width: 100%;
+    list-style: none;
+
+}
+header ul li a{
+    padding: 10px 4px;
+    transition: .2s;
+}
+header ul li a:hover, .active{
+    background-color: #fff;
+    color: #200016;
+    border-radius: 10px;
+}
+/*end header*/
+/*sart main */
+.main{
+position: relative;
+height: 100vh;
+width: 100%; 
+display: flex;
+overflow: hidden;
+}
+.main::after{
+content: '';
+position: absolute;
+bottom: 0;
+height: 100px;
+width: 100%; 
+background: linear-gradient( to top,  #200016,transparent);
+}
+.main .image  img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+#moon{
+    mix-blend-mode: screen;
+    
+}
+.main h2{
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: xx-large;
+    text-transform: uppercase;
+
+
+}
+
+
+/*end main */
+/*strat contant*/
+.content{
+   color: white;  
+   padding: 30px;
+}
+content h2{
+    margin: 20px;
+    font-size: 30px;
+}
+content p{
+    margin: 20px;
+
+}
+/*end contant*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
